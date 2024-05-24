@@ -42,6 +42,16 @@
          // btn.addEventListener("click", doCalculation);         
          
       </script>
+      <style>
+         @media only screen and (max-width: 720px) {
+              #operator {
+                  margin-left: -15px;
+              }            
+              #result {
+                  margin-left: -70px;
+              }
+         }
+      </style>
    </head>
    <body>
       <div class="container">
@@ -78,7 +88,7 @@
          </div>
          <br>
          <br>
-         <div class="row justify-content-center">
+         <div id="result" class="row justify-content-center">
             <div class="col-2">
                <button id="calculate" class="btn btn-primary" type="button" onclick="doCalculation()">Let's Calculate</button>
             </div>
